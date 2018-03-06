@@ -1,0 +1,305 @@
+@font-face {
+	font-family: "title-police";
+	src: url('police-title/anicm.ttf');
+}
+
+@font-face {
+	font-family: "title-police";
+	font-weight: bold;
+	src: url('police-title/anicb.ttf');
+}	
+
+@font-face {
+	font-family: "normal-police";	
+	src: url('police-text/partybusiness.ttf');
+}	
+
+@font-face {
+	font-family: "symbol";	
+	src: url('symbole/tngan.ttf');
+}	
+
+@font-face {
+	font-family: "symbol";	
+	font-weight: bold;
+	src: url('symbole/tnganb.ttf');
+}	
+
+header {
+	background-color: #F15E1F	 ;
+	/*border: 1px solid;*/
+}
+body {
+	/*background-color: red;*/
+}
+
+h1,h2,header nav,button{
+	font-family: "title-police" ,Helvetica, Arial, sans-serif;
+	font-style: normal;
+	font-weight: bold;	
+}
+
+p, h3,li, figure{
+	font-family: "normal-police" ,Helvetica, Arial, sans-serif;
+	font-style: normal;			
+}
+
+#fellows{
+	padding-bottom: 40px;
+}
+
+
+/* ------ GESTION POLICE ----------- */ 
+
+
+.symbol{
+	font-family: "symbol";
+	color: orange;
+}
+/* -------------  header  ----------------  */ 
+
+
+.navbar-dark .navbar-nav .nav-item{
+	padding:0px ;
+	/*border-right:1px solid white;*/
+	font-size: 1.5em;
+	margin: 15px;
+}
+
+.navbar-dark .navbar-nav .nav-item:last-child{	
+	border-right:0px solid white;
+}
+
+
+.navbar-dark .navbar-nav .nav-link:hover{		
+	/*padding-bottom: 5px;*/
+	color:white;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+	border-bottom: 3px solid white;	
+	color:white;
+}
+
+.navbar-nav .nav-link{
+	padding:0;
+
+}
+
+
+/* -------------------- carroussel -------------------- */
+.carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+
+.carousel-inner h3 {
+     font-size: calc(16px + ( 84 ) * (100vw - 400px ) / (1600 - 400) );
+
+}
+ 
+.carousel-inner p {
+    margin-top: 0;
+    margin-bottom: 25%;
+    font-size: calc(16px + ( 50 ) * (100vw - 400px ) / (1600 - 400) );
+}
+
+/* font-size: calc(16px + ( 30-16) * (100vw - 400px ) / (1600 - 400) ); */
+
+/* -------------- FELLOWS ------------- */ 
+
+h2,#fellows p.th2{
+	/*padding:40px 0 ;*/
+	/*font-size: calc(16px + ( 40 - 10 ) * (100vw - 4	00px ) / (1600 - 400) );*/
+	
+}
+
+#fellows p.th2 , #fellows h2{
+	font-size: calc(11px + 1vw  );
+	/*border:1px solid black;*/
+}
+
+.big1{
+	font-size: calc(12px + 0.8vw  );
+
+}
+
+#nav-fellows p:hover{
+
+	border-bottom:3px solid orange;
+}
+
+#nav-fellows{
+	font-size: calc(16px + 1vw  );	
+}
+
+
+#fellows .nav-pills .nav-link{
+	color:black	;
+	background-color: none;
+}
+
+#fellows .nav-pills .nav-link:hover{
+	border-bottom:3px solid orange;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+	background-color: transparent;
+}
+
+#nav-fellows .nav-link{
+	padding: 0;
+	margin:2rem;
+
+}
+
+#nav-fellows li{
+	padding:0px 10px;
+}
+
+
+#nav-fellows li a{
+	margin:3px 20px;
+}
+
+/* ------------- THUMBNAILS --------------- */
+/*
+.thumb {
+	max-width:200px	;
+}*/
+.thumb .img-thumbnail{
+	background-color: black;
+	margin:auto;
+	max-width:326px;
+}
+
+.thumb figure{
+	position: relative;
+	z-index:0;
+
+}
+.thumb figure figcaption{
+	background-color: black;
+	text-align: left;
+	padding: 5px;
+	margin:0;	
+	color:white;
+	font-size: calc(10px + 15 * (100vw - 400px) / 1200);	
+}
+
+.thumb figure img{	
+	max-width: 100%;
+	opacity:0.6;	
+	margin-bottom: 0;
+}
+
+.thumb figure:hover img{	
+	
+	opacity:1;	
+}
+
+
+.thumb .comment	{
+	position:absolute;
+	top:10%;
+	left:0;
+	width: 100%;
+	text-align: center;
+
+}
+
+.thumb .comment p{
+	background-color:grey;
+	opacity: 0.8;
+	display: inline-block;
+	max-width:80%;
+	margin:auto;
+	padding:5px;
+	border-radius: 10px;
+	/*  font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
+	/*font-size: calc(16px + (40px - 16px ) * ((100vw - 576px) / (1600px - 576px)));*/
+	font-size: calc(10px + 25 * (100vw - 400px) / 1200);	
+}
+
+.thumb figure .comment p span{
+ 	color:orange;
+}
+
+.thumb .comment{
+	margin:0;
+	
+}
+
+.thumb h3{
+	
+	font-size: calc(10px + 25 * (100vw - 400px) / 1200);	
+	position: absolute;
+	width:95%;
+	bottom: 30%;
+	color:white;
+	text-align: center;
+	z-index: 1;
+}
+
+.thumb figure:hover .comment{
+	display: none;
+}
+
+.thumb figure:hover h3{
+	bottom: 50%;
+}
+
+@media screen and (max-width: 576px) {
+
+.thumb .comment p{
+	font-size: 32px;
+}
+
+.thumb h3{
+	font-size: 32px;
+}
+
+.thumb figure figcaption{
+	font-size: 28px;
+}
+}
+
+/* ------------------- INFO text image ------------------- */
+.dark {
+	background-color: black;
+	color:white;
+}
+
+.article .p-text, .article h2{
+	margin:20px;
+}
+
+p.gd-text {
+	font-size: calc(10px + 20 * (100vw - 400px) / 1200);	
+}
+
+.rond{
+	border-radius:100%;
+}
+
+.article {
+	padding:20px;
+}
+
+.article h2{
+	font-size: calc(10px + 20 * (100vw - 400px) / 1200);	
+}
+
+.btn {
+	color:orange;
+  	transform:    skewX(-25deg);
+  	border-radius:0;
+}
+
+.btn:hover{
+	background-color: grey;
+}
+.article .btn{
+	padding:12px;
+	margin:15px;
+}
